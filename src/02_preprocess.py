@@ -37,6 +37,5 @@ np.save('../data/X_test.npy', X_test)
 np.save('../data/y_train.npy', y_train)
 np.save('../data/y_test.npy', y_test)
 joblib.dump(scaler, '../data/scaler.pkl')
-
 print(f"✅ Features: {X.shape}, Train: {X_train.shape}")
 print(f"✅ Balance: Phishing {np.sum(y)}/{len(y)} ({np.mean(y)*100:.1f}%)")
